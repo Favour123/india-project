@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero </title>
+    <title>Hero</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
@@ -14,10 +14,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
         .video-placeholder {
-            border: 2px solid #ddd; 
-            padding: 10px;
             margin-top: 20px;
-            width: 60%;
+            width: 100%; /* Adjust width to 100% for responsiveness */
+            padding: 0; /* Remove padding to ensure it fits well */
+        }
+        .video-placeholder iframe {
+            width: 100%; /* Make iframe responsive */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -59,15 +62,13 @@
         You get ready-to-buy leads delivered directly to your calendar— no hassle, no extra effort. <br>
         And the best part? It comes with a Money-Back Guarantee.
     </p>
-    <center>
-        <div class="video-placeholder">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id?autoplay=1&mute=1" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-    </center>
+    <div class="video-placeholder">
+        <iframe src="https://www.youtube.com/embed/your-video-id?autoplay=1&mute=1" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
 
     <a href="https://calendly.com/digebee/30m" class="btn btn-primary btn-lg mt-4">Close More Leads Now</a>
 </section>
