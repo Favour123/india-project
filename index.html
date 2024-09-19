@@ -15,12 +15,96 @@
         }
         .video-placeholder {
             margin-top: 20px;
-            width: 100%; /* Adjust width to 100% for responsiveness */
-            padding: 0; /* Remove padding to ensure it fits well */
         }
         .video-placeholder iframe {
-            width: 100%; /* Make iframe responsive */
-            height: auto; /* Maintain aspect ratio */
+            width: 60%; /* Fully responsive video */
+            height: 295px; /* Height can be adjusted for mobile */
+        }
+        .section {
+            background-color: #e8e8e8;  
+            padding: 40px;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 3rem;
+        }
+        .cta-button {
+            background-color: #D4A35F;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+            width: 100%; /* Full width on mobile */
+        }
+        .cta-button:hover {
+            background-color: #c6954b;
+        }
+        .avatars img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            
+        }
+
+        .img1{
+            width: 100%;
+            height: 20rem;
+            background-image: url(WhatsApp\ Image\ 2024-09-11\ at\ 10.38.17\ PM.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img2{
+            width: 100%;
+            height: 10rem;
+            background-image: url(WhatsApp\ Image\ 2024-09-11\ at\ 10.37.23\ PM.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img3{
+            width: 30%;
+            height: 10rem;
+            background-image: url(WhatsApp\ Image\ 2024-09-11\ at\ 10.37.46\ PM.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .img4{
+            width: 30%;
+            height: 10rem;
+            background-image: url(WhatsApp\ Image\ 2024-09-11\ at\ 10.37.57\ PM.jpeg);
+            background-position: center;
+            background-size: cover;
+        } 
+
+        .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+    .flex-container {
+      gap: 10px; /* Space between images */
+    }
+    img{
+        background-position: center;
+     }
+        /* #pare{
+            display: flex;
+        }
+ 
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+            }
+            .cta-button {
+                font-size: 16px;
+            }
+            .avatars img{
+                width: 90%;
+                display: none;
+            }
+            .pare{
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -32,29 +116,12 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Navigation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Navigation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Navigation</a>
-                </li>
-            </ul>
-            <span class="navbar-text ml-auto">
-                <a href="">call to action</a>
-             </span>
-        </div>
     </div>
 </nav>
 
-<section class="container mt-5 text-center hero-section">
-    <p class="text-success font-weight-bold">HERO SECTION LEAD MAGNET</p>
-    <h2 class="font-weight-bold">Tired Of Struggling to Scale Your Real Estate Business?</h2>
-    <p class="lead mt-3">
+<section class="container mt-5 text-center">
+    <p id="para" class="text-dark" style="font-size: 20px;"> <i>Tired Of Struggling to Scale Your Real Estate Business?</i></p>
+    <p class="lead mt-3 font-weight-bold" style="font-size: 40px;">
         Get 50+ <strong>Business Ready</strong> Real Estate Leads Or 10+ Qualified Appointments In The Next 30 Days— Through Laser Targeted Outbound Prospecting Campaigns.
     </p>
     <p class="text-muted">
@@ -62,6 +129,8 @@
         You get ready-to-buy leads delivered directly to your calendar— no hassle, no extra effort. <br>
         And the best part? It comes with a Money-Back Guarantee.
     </p>
+
+    <!-- Responsive Video Placeholder -->
     <div class="video-placeholder">
         <iframe src="https://www.youtube.com/embed/your-video-id?autoplay=1&mute=1" 
                 title="YouTube video player" frameborder="0" 
@@ -70,8 +139,60 @@
         </iframe>
     </div>
 
-    <a href="https://calendly.com/digebee/30m" class="btn btn-primary btn-lg mt-4">Close More Leads Now</a>
+    <div class="container section text-center" style="width: 60%;">
+        <h2 class="">READY FOR CONSISTENT $100K+ MONTHS?</h2>
+        <p>We Will Install A Custom, Done-For-You Marketing System In 7 Days Or Less</p>
+
+        <!-- Call to Action Button -->
+        <button class="cta-button mt-3">SCHEDULE A DEMO CALL</button>
+
+         <div class="d-flex justify-content-center align-items-center mt-4">
+            <div class="avatars d-flex">
+                <!-- <imeg src="32741.jpg" alt="Client 5"> -->
+         
+            <div class="ms-3 text-start">
+                <p class="mb-0 fw-bold"> <b>2,000+ Businesses</b></p>
+                <small class="text-muted" style="font-size: 15px;">Successfully Served</small>
+            </div>
+        </div>
+    </div>
 </section>
+
+
+
+<div class="container mt-5 " style="background-color: #dcdada; width: 100%;">
+    <div class="d-flex flex-container flex-wrap justify-content-between">
+      <img src="WhatsApp Image 2024-09-11 at 10.37.23 PM.jpeg" class="img-fluid" alt="Image 1">
+      <img src="WhatsApp Image 2024-09-11 at 10.37.46 PM.jpeg" class="img-fluid" alt="Image 2">
+      <img src="WhatsApp Image 2024-09-11 at 10.37.57 PM.jpeg" class="img-fluid" alt="Image 3">
+      <img src="WhatsApp Image 2024-09-11 at 10.38.17 PM.jpeg" class="img-fluid" alt="Image 4">
+      <img src="WhatsApp Image 2024-09-11 at 10.42.17 PM.jpeg" class="img-fluid" alt="Image 5">
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <div class="container d-flex mb-5" style="gap: 2rem;" id="pare">
+        <div class="img1"></div>
+        <div class="img2"></div>
+     </div>
+     <div class="img3"></div> -->
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
